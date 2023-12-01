@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Segunda Mano</h1>
+    </header>
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            <div id="sub-menu">
+                <a href="../nuevos/nuevos.html">Nuevos</a>
+                <a href=""><b><u>2ª mano</u></b></a>
+                <a href="../nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
+            </div>
+            <a href="../../../noticias/noticias.html">Noticias</a>
+            <a href="../../../contactar/contactar.html">Contactar</a>
+            <a href="../../../index.html">Volver</a>
+        </nav>
+
+        <main class="album">
+            <article class="album">
+                <img src="../img/bully.jpg" alt="Descripción de la imagen">
+                
+                <ul>
+                    <h3>SUGGAR EGG</h3>
+                    <li>A1 - Add It On</li>
+                    <li>A2 - Every Tradition</li>
+                    <li>A3 - Where To Start</li>
+                    <li>A4 - Prism</li>
+                    <li>A5 - You</li>
+                    <li>A6 - Let You</li>
+                    <li>B1 - Like Fire</li>
+                    <li>B2 - Stuck In Your Head</li>
+                    <li>B3 - Come Down</li>
+                    <li>B4 - Not Ashamed</li>
+                    <li>B5 - Hours And Hours</li>
+                    <li>B6 - What I Wanted</li>
+                  </ul>
+                  <p>
+                    Fuerte y tranquilo, armonía y disonancia, suave y pesado: la música rock ha extraído  <br>
+                    emociones contrastantes durante mucho tiempo mediante la yuxtaposición binaria, <br>
+                    pero fue el grunge el que agudizó un contraste sonoro convirtiéndolo en una tarjeta de  <br>
+                    presentación genérica. Treinta años después, Alicia Bognanno de Minnesota sigue  <br>
+                    experimentando con la dinámica de esa época: su trabajo se construye a partir de la  <br>
+                    interacción entre líneas melódicas de guitarra y rugidos de dolor primal, entre un canto <br>
+                    melódico y un triturado brutal. Nunca desagradablemente estridente, nunca  
+                    <br> empalagosamente dulce, es una fórmula hermética y, al mismo tiempo, extremadamente gastada.     
+                </p>
+            </article>
+        </main>
+        
+        
+    
+    </section>
+
+    <footer>
+        <p>example</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

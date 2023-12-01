@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Nuevas Adiciones</h1>
+    </header>
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            <div id="sub-menu">
+                <a href="../nuevos/nuevos.html">Nuevos</a>
+                <a href="../2ndmano/2ndmano.html">2ª mano</a>
+                <a href=""><b><u>Nuevas Adiciones</u></b></a>
+            </div>
+            <a href="../../noticias/noticias.html">Noticias</a>
+            <a href="../../contactar/contactar.html">Contactar</a>
+            <a href="../../index.html">Volver</a>
+        </nav>
+
+        <main class="vinilos">
+            <article>            
+                <div>
+                    <img src="./img/TeamDresch.jpg" alt="Texto alternativo de la imagen">
+                </div>
+                <div>
+                    <h2>ALBUM</h2>
+                    <h3>PERSONAL BEST</h3>
+                    <p>Saber más</p>
+                </div>
+                <div>
+                    <h2>ARTISTA</h2>
+                    <h3>TEAM DRESCH</h3>
+                </div>
+                <div>
+                    <h2>PRECIO</h2>
+                    <h3>34.99€</h3>
+                </div>
+            </article>
+            <article>            
+                <div><img src="./img/PjHarvey.jpg" alt="Texto alternativo de la imagen"></div>
+                <div>
+                    <h2>ALBUM</h2>
+                    <h3>TO BRING YOU MY LOVE</h3>
+                    <p>Saber más</p>
+                </div>
+                <div>
+                    <h2>ARTISTA</h2>
+                    <h3>PJ HARVEY</h3>
+                </div>
+                <div>
+                    <h2>PRECIO</h2>
+                    <h3>40.99€</h3>
+                </div>
+            </article>
+            <article>            
+                <div><img src="./img/PearlJam.jpg" alt="Texto alternativo de la imagen"></div>
+                <div>
+                    <h2>ALBUM</h2>
+                    <h3>PEARL JAM UNPLUGGED</h3>
+                    <p>Saber más</p>
+                </div>
+                <div>
+                    <h2>ARTISTA</h2>
+                    <h3>PEARL JAM</h3>
+                </div>
+                <div>
+                    <h2>PRECIO</h2>
+                    <h3>29.99€</h3>
+                </div>
+            </article>
+            <article>            
+                <div><img src="./img/Screaming Females.jpg" alt="Texto alternativo de la imagen"></div>
+                <div>
+                    <h2>ALBUM</h2>
+                    <h3>UGLY</h3>
+                    <p>Saber más</p>
+                </div>
+                <div>
+                    <h2>ARTISTA</h2>
+                    <h3>SCREAMING FEMALES</h3>
+                </div>
+                <div>
+                    <h2>PRECIO</h2>
+                    <h3>22.99€</h3>
+                </div>
+            </article>
+            <article>            
+                <div><img src="./img/Sleater kinney.jpg" alt="Texto alternativo de la imagen"></div>
+                <div>
+                    <h2>ALBUM</h2>
+                    <h3>THE WOODS</h3>
+                    <p>Saber más</p>
+                </div>
+                <div>
+                    <h2>ARTISTA</h2>
+                    <h3>SLEATER KINNEY</h3>
+                </div>
+                <div>
+                    <h2>PRECIO</h2>
+                    <h3>24.99€</h3>
+                </div>
+            </article>
+        </main>
+        
+        
+    
+    </section>
+
+    <footer>
+        <p>example</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

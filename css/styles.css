@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+        font-family: 'TuFuentePreferida', sans-serif;
+        /* Otra propiedad de fuente opcional: */
+        line-height: 1.6; /* Altura de línea predeterminada */
+        color: #333; /* Color de texto predeterminado */
+      }
+
+
+
+header, footer, nav, aside {
+    background-color: #274f5d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #084053;
+    border-radius: 8px;
+}
+header{
+    font-size: 20px;
+}
+
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex: 1;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    flex-direction: row;
+}
+
+nav {
+    width: 250px;
+}
+
+nav a {
+    padding: 15px;
+    display: block;
+    color: #ffffff;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    background-color: #1b3843;
+}
+
+#sub-menu {
+    display: none;
+    padding-left: 20px;
+}
+
+#sub-menu a {
+    color: #ddd;
+}
+
+#sidebar a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #274f5d;
+    color: #fff;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-top: auto;
+}
+
+aside {
+    width: 250px;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    padding: 20px;
+    border: 1px solid #6db8d3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
+
+article {
+    border: 1px solid #cb9839;
+    height: 33.3%;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    background-color: #cb983934;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px;
+}
+
+article p{
+    font-size: 150%;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+article h1{
+    text-align: right;
+}
+
+article img{
+    max-width: 27%;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.paginaInicial h1 {
+    font-size: 2em;
+}
+.paginaInicial div{
+    margin-left: 30px;
+    width: 33%;
+    border: 1px solid #cb9839;
+    border-radius: 5px;
+}
+.paginaInicial a{
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.4em;
+    text-align: right;
+    margin-top: 100px;
+    margin-left: 55%;
+}
+
+.calendario {
+    display: flex;
+    background-color: #f0f0f07d;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 10px;
+    max-width: 85%;
+    max-height: 15%;
+    font-size: 1em;
+}
+
+
+.dia {
+    font-size: 2em;
+    font-weight: bold;
+    border: transparent;
+    max-width: 25%;
+    margin-left: -5px;
+}
+
+.info {
+    border: transparent;
+    flex: 1;
+    margin-top: auto;
+    max-width: 5%;
+}
+
+.footer p{
+    font-size: 1.5em;
+}
+
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .noticias article {
+    width: calc(48% - 20px); 
+    height: calc(48% - 20px); 
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+.noticias h3{
+    position: relative;
+    font-size: 150%;
+    text-align: left;
+}
+
+.noticias h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    padding-top: 20px;
+    left: 50%; /* Centra la barra en el 50% del contenedor */
+    transform: translateX(-50%); /* Alinea la barra horizontal al centro */
+    width: 90%; /* Ajusta el ancho según tus preferencias */
+    border-bottom: 2px groove #b9270d; /* Ajusta el grosor según tus preferencias */
+}
+
+.noticias p
+{
+    font-size: 150%;
+    text-align: left;
+}
+.noticias a{
+  margin-top:auto;
+  align-self: flex-end; /* Alinea el enlace al final del contenedor (a la derecha) */
+  color: #007bff; /* Cambia el color del enlace si lo deseas */
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.vinilos article {
+    padding: 0px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+    display: flex;
+    flex-wrap: nowrap; /* Permitir el ajuste de línea si es necesario */
+    justify-content: space-between;
+}
+
+.vinilos article div{
+    flex: 0 0 calc(25% - 10px); /* Establecer ancho fijo para cada columna */
+    box-sizing: border-box; 
+    justify-content: center;
+    border: transparent;
+}
+
+.vinilos article div img {
+    border: 3px solid #000000;
+    border-radius: 5px;
+    max-width: 45%; 
+    max-height: 100%;
+    display: block; /* Eliminar espacio adicional debajo de la imagen */
+    margin: 0 auto;
+  }
+
+  .vinilos article div h2,h3,p{
+    font-size: 2.75em;
+    text-align: center;
+    margin-top: auto;
+  }
+  .vinilos article div h3{
+    font-size: 200%;
+  }
+  .vinilos article div p{
+    font-size: 150%;
+    text-align: right;
+  }
+
+  .vinilos a{
+    margin-top:auto;
+    margin-left: 75%;
+    color: #007bff; 
+    text-decoration: none;
+    font-size: 1.3em;
+  }
+
+  
+    .contactar article {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20%;
+        }
+
+    .contactar article form {
+        background-color: #cb98399b;
+        padding: 20px;
+        margin-top: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 50%;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input, textarea {
+        width: 60%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    textarea {
+        /* Adjust the number of rows to increase the size */
+        height: 120px; /* You can adjust the height value as needed */
+    }
+
+    button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .contactar p{
+        font-size: 2em;
+        color: green;
+    }
+
+  
+      .album article{
+        height: 100%;
+        padding-left: 35px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+  
+      .album img {
+        max-width: 30%;
+        height: auto;
+        border-radius: 5px;
+      } 
+  
+      .album h3, .album p {
+        margin: 0;
+      }
+      .album p{
+        padding: 100px;
+        font-size: 1.5em;
+        text-align: justify;
+      }
+      .album ul{
+        text-align: left;
+    }

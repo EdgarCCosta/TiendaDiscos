@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Segunda Mano</h1>
+    </header>
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            <div id="sub-menu">
+                <a href="../nuevos/nuevos.html">Nuevos</a>
+                <a href=""><b><u>2ª mano</u></b></a>
+                <a href="../nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
+            </div>
+            <a href="../../noticias/noticias.html">Noticias</a>
+            <a href="../../contactar/contactar.html">Contactar</a>
+            <a href="../../index.html">Volver</a>
+        </nav>
+
+        <main class="album">
+            <article class="album">
+                <img src="./img/TeamDresch.jpg" alt="Descripción de la imagen">
+                
+                <ul>
+                    <h3>Personal Best</h3>
+                    <li>A1 - Fagetarian and Dyke</li>
+                    <li>A2 - Hate the Christian Right!</li>
+                    <li>A3 - She's Crushing My Mind</li>
+                    <li>A4 - Freewheelm</li>
+                    <li>A5 - She's Amazing</li>
+                    <li>B1 - Fake Fight</li>
+                    <li>B2 - #1 Chance Pirate TVd</li>
+                    <li>B3 - D.A. Don't Care</li>
+                    <li>B4 - Growing up in Springfield</li>
+                    <li>B5 - Screwing Yer Courages</li>
+                  </ul>
+                  <p>
+                    "Personal Best" es el primer álbum de estudio de la banda estadounidense de queercore, Team Dresch. Fue lanzado el 23 de enero de 1995 por Candy Ass Records y Chainsaw Records.<br>
+                     Se reeditó en Jealous Butcher Records en mayo de 2019. El sello reeditó todo su catálogo anterior para ayudar a reafirmar el legado de la banda como íconos del queercore.
+                </p>
+            </article>
+        </main>
+        
+        
+    
+    </section>
+
+    <footer>
+        <p>example</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

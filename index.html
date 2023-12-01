@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>TIENDA DE DISCOS</h1>
+    </header>
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()">Vinilos</a>
+            <div id="sub-menu">
+                <a href="albumes/nuevos/nuevos.html">Nuevos</a>
+                <a href="albumes/2ndmano/2ndmano.html">2ª mano</a>
+                <a href="albumes/nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
+            </div>
+            <a href="noticias/noticias.html">Noticias</a>
+            <a href="contactar/contactar.html">Contactar</a>
+            
+        </nav>
+
+        <main class="paginaInicial">
+        <article>
+            <p> Bienvenid@s a nuestra tienda de discos!<br>
+                En esta web encontrarás una amplia selección nuevos vinilos y también joyas de segunda mano.<br>
+                Además, descubriréis semanalmente toda la información sobre las bandas Indie en destaque que suenan a nivel nacional e internacional. <br>
+                Si quereis visitarnos lo podeis hacer en nuestra tienda física que se encuentra en Oñati!</p>
+        </article>
+
+        <article>
+            <h1>Banda en Destaque</h1>
+            <p>"Screaming Females" es una de mis bandas de rock favoritas originaria de los Estados Unidos. Han estado lanzando discos consistentes y de calidad desde su primer lanzamiento, 
+                "Baby Teeth", en 2006. Aunque Screaming Females no siempre encaje perfectamente en el género hardcore punk o punk, 
+                la capacidad de la banda para mantenerse fiel a lo que hace única su música y ofrecer constantemente entretenimiento es lo que me hace seguir escuchándolos.</p>
+                <img src="/img/ScreamingFemalesLive.jpg">
+           
+        </article>
+
+        <article>
+            <h1>Noticias</h1>
+                <div>
+                    <p>Primer avance del Bilbao BBK Live 2024: Arcade Fire,  Massive Attack, The Prodigy...</p>
+                    <a href="/noticias/noticias.html">Seguir leyendo</a> 
+                </div>
+
+                <div>
+                    <p>MGMT anuncia nuevo álbum «Loss of Life»</p>
+                    <a href="/noticias/noticias.html">Seguir leyendo</a> 
+                </div>
+
+                <div>
+                    <p>PJ Harvey repasa su nuevo disco en el concierto para Tiny Desk</p>
+                    <a href="/noticias/noticias.html">Seguir leyendo</a> 
+                </div>
+
+        </article>
+        </main>
+        
+
+        <aside>
+            <h3>Conciertos</h3>
+            <article class="calendario">
+                <div class="dia">02 Dic</div>
+                <div class="info">
+                    <h2>Manu Chao</h2>
+                </div>
+            </article>
+
+            <article class="calendario">
+                <div class="dia">03 Dic</div>
+                <div class="info">
+                    <h2>Bully</h2>
+                </div>
+            </article>
+
+            <article class="calendario">
+                <div class="dia">05 Dic</div>
+                <div class="info">
+                    <h2>Pearl Jam </h2>
+                </div>
+            </article>
+
+            <article class="calendario">
+                <div class="dia">09 Dic</div>
+                <div class="info">
+                    <h2>Le Tigre </h2>
+                </div>
+            </article>
+
+            <article class="calendario">
+                <div class="dia">13 Dic</div>
+                <div class="info">
+                    <h2>Kuraia </h2>
+                </div>
+            </article>
+        </aside>
+        
+    
+    </section>
+
+    <footer class="footer">
+        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

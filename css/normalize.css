@@ -192,7 +192,7 @@
    * Corrige la incapacidad para dar estilo a tipos clicables en iOS y Safari.
    */
   
-  button,
+   button,
   [type="button"],
   [type="reset"],
   [type="submit"] {

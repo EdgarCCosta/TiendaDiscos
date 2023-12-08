@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Nuevas Adiciones</h1>
+    </header>
+
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            <div id="sub-menu">
+                <a href="../../nuevos/nuevos.html">Nuevos</a>
+                <a href="../../2ndmano/2ndmano.html">2ª mano</a>
+                <a href="../nuevasadiciones.html">Nuevas Adiciones</a>
+            </div>
+            <a href="../../../noticias/noticias.html">Noticias</a>
+            <a href="../../../contactar/contactar.html">Contactar</a>
+            <a href="../../../index.html">Volver</a>
+        </nav>
+
+        <main class="album">
+            <article class="album">
+                <img src="../img/Sleaterkinney.jpg" alt="Descripción de la imagen">
+                
+                <ul>
+                    <h3>The Woods</h3>
+                    <li>A1 - The Fox</li>
+                    <li>A2 - Wilderness</li>
+                    <li>A3 - What's Mine Is Yours</li>
+                    <li>A4 - Jumpers</li>
+                    <li>A5 - Modern Girl</li>
+                    <li>B1 - Entertain</li>
+                    <li>B2 - Rollercoaster</li>
+                    <li>B3 - Steep Air</li>
+                    <li>B4 - Let's Call It Love</li>
+                    <li>B5 - Night Light</li>
+                  </ul>
+
+                <p>
+                    Gran parte del material de The Woods invita a la inmolación al mismo tiempo que satisface completamente como música rock, <br>
+                    siendo la turbulencia lírica parte de su atractivo como punk sostenido. No se debería recriminar a Sleater-Kinney por seguir existiendo, <br>
+                    pero la tensión y el dolor de The Woods se ven afectados al saber que la banda emprendería una gira de reunión. <br>
+                    La banda es una presencia vital en el panorama de la música independiente y el clima político moderno, incluso mientras continúan luchando contra su propia existencia.<br>
+                </p>
+
+            </article>
+        </main>
+    </section>
+
+<footer class="footer">
+        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Segunda Mano</h1>
+    </header>
+    
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            <div id="sub-menu">
+                <a href="../../nuevos/nuevos.html">Nuevos</a>
+                <a href="../2ndmano.html">2ª mano</a>
+                <a href="../../nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
+            </div>
+            <a href="../../../noticias/noticias.html">Noticias</a>
+            <a href="../../../contactar/contactar.html">Contactar</a>
+            <a href="../../../index.html">Volver</a>
+        </nav>
+
+        <main class="album">
+            <article class="album">
+                <img src="../img/ScreamingFemales.jpg" alt="Descripción de la imagen">
+                
+                <ul>
+                    <h3>Ugly</h3>
+                    <li>A1 - It All Means Nothing</li>
+                    <li>A2 - Rotten Apple</li>
+                    <li>A3 - Extinction</li>
+                    <li>A4 - Read Hand</li>
+                    <li>A5 - High</li>
+                    <li>A6 - Expire</li>
+                    <li>A7 - Crow's Nest</li>
+                    <li>B1 - Tell Me No</li>
+                    <li>B2 - Leave It All Up To Me</li>
+                    <li>B3 - Doom 84</li>
+                    <li>B4 - Help Me</li>
+                    <li>B5 - Something Ugly</li>
+                    <li>B6 - Slow Birth</li>
+                    <li>B7 - It's Nice</li>
+                  </ul>
+
+                <p>
+                    Las 14 pistas del álbum reafirman los puntos de referencia de la banda; todavía pueden destrozar y <br>la vocalista Marissa Paternoster aún puede soltar un poderoso alarido. 
+                    Pero no se queda ahí. <br>El álbum introduce nuevas exploraciones para la banda, un logro verdaderamente notable teniendo <br>en cuenta su ya prolífica producción. 
+                    "Ugly" tiene la combinación perfecta de energía cruda <br>y destreza musical pulida que produce el tipo de rock and roll que sigue siendo una fuerza a tener en cuenta.
+                </p>
+                
+            </article>
+        </main>
+    </section>
+
+    <footer class="footer">
+        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

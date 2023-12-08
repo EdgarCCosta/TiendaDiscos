@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Nuevos</h1>
+    </header>
+
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            <div id="sub-menu">
+                <a href="../nuevos.html">Nuevos</a>
+                <a href="../../2ndmano/2ndmano.html">2ª mano</a>
+                <a href="../../nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
+            </div>
+            <a href="../../../noticias/noticias.html">Noticias</a>
+            <a href="../../../contactar/contactar.html">Contactar</a>
+            <a href="../../../index.html">Volver</a>
+        </nav>
+
+        <main class="album">
+            <article class="album">
+                <img src="../img/Bikini kill.jpg" alt="Descripción de la imagen">
+                
+                <ul>
+                    <h3>Reject All American</h3>
+                    <li>A1 - Statement of Vindication</li>
+                    <li>A2 - Capri Pants</li>
+                    <li>A3 - Jet Ski</li>
+                    <li>A4 - Distinct Complicity</li>
+                    <li>A5 - False Start</li>
+                    <li>A6 - R.I.P</li>
+                    <li>B1 - No Backrub</li>
+                    <li>B2 - Bloody Ice Cream</li>
+                    <li>B3 - For Only</li>
+                    <li>B4 - Tony Randall</li>
+                    <li>B5 - Reject All American</li>
+                    <li>B6 - Finale</li>
+                  </ul>
+
+                <p>
+                    Reject All American" de Bikini Kill es un álbum audaz que desafía las normas y expectativas<br>
+                    sociales. Lanzado en 1996, conserva el distintivo sonido punk de Bikini Kill mientras explora<br>
+                    temas más oscuros y complejos. La energía cruda y sin disculpas, junto con la potente voz<br>
+                    de Kathleen Hanna, crea una experiencia auditiva visceral. Las letras desafían la conformidad, 
+                    el sexismo y el sueño americano, convirtiéndolo en una obra rebelde y cargada socialmente.<br>
+                    Aunque puede no ser tan accesible como algunas de sus primeras producciones, "Reject All 
+                    American" sigue siendo una obra provocadora e influyente dentro del movimiento riot grrrl.
+                </p>
+
+            </article>
+        </main>
+    </section>
+
+    <footer class="footer">
+        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

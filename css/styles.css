@@ -4,14 +4,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-   
-        font-family: 'TuFuentePreferida', sans-serif;
-        /* Otra propiedad de fuente opcional: */
-        line-height: 1.6; /* Altura de línea predeterminada */
-        color: #333; /* Color de texto predeterminado */
-      }
-
-
+    font-family: sans-serif;
+    line-height: 1.6; 
+    color: #333; 
+}
 
 header, footer, nav, aside {
     background-color: #274f5d;
@@ -24,7 +20,6 @@ header, footer, nav, aside {
 header{
     font-size: 20px;
 }
-
 
 main {
     display: flex;
@@ -100,7 +95,6 @@ div {
 
 article {
     border: 1px solid #cb9839;
-    height: 33.3%;
     margin-left: 20px; 
     margin-right: 20px; 
     margin-bottom: 20px; 
@@ -108,6 +102,7 @@ article {
     border-radius: 5px;
     display: flex;
     padding: 20px;
+    overflow: auto;
 }
 
 article p{
@@ -120,18 +115,21 @@ article h1{
     text-align: right;
 }
 
-article img{
+article img {
     max-width: 27%;
     border-radius: 5px;
     border: 2px solid #000000;
 }
 
+
+/* CSS expecificos para la pagina index */
 .paginaInicial h1 {
     font-size: 2em;
 }
 .paginaInicial div{
     margin-left: 30px;
     width: 33%;
+    max-height: 75%;
     border: 1px solid #cb9839;
     border-radius: 5px;
 }
@@ -139,9 +137,7 @@ article img{
     text-decoration: none;
     color: #007bff;
     font-size: 1.4em;
-    text-align: right;
-    margin-top: 100px;
-    margin-left: 55%;
+    margin-left: 5%;
 }
 
 .calendario {
@@ -175,6 +171,9 @@ article img{
     font-size: 1.5em;
 }
 
+
+
+/* CSS expecificos para la pagina noticias */
 .noticias {
     display: flex;
     flex-wrap: wrap;
@@ -208,10 +207,10 @@ article img{
     position: absolute;
     bottom: -10px;
     padding-top: 20px;
-    left: 50%; /* Centra la barra en el 50% del contenedor */
-    transform: translateX(-50%); /* Alinea la barra horizontal al centro */
-    width: 90%; /* Ajusta el ancho según tus preferencias */
-    border-bottom: 2px groove #b9270d; /* Ajusta el grosor según tus preferencias */
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 90%; 
+    border-bottom: 2px groove #b9270d; 
 }
 
 .noticias p
@@ -221,138 +220,144 @@ article img{
 }
 .noticias a{
   margin-top:auto;
-  align-self: flex-end; /* Alinea el enlace al final del contenedor (a la derecha) */
-  color: #007bff; /* Cambia el color del enlace si lo deseas */
+  align-self: flex-end; 
+  color: #007bff; 
   text-decoration: none;
   font-size: 1.3em;
 }
 
+
+
+/* CSS expecificos para las paginas de los vinilos listados */
 .vinilos article {
-    padding: 0px;
-    margin-left: 20px; 
-    margin-right: 20px; 
-    margin-bottom: 10px; 
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
     display: flex;
-    flex-wrap: nowrap; /* Permitir el ajuste de línea si es necesario */
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .vinilos article div{
-    flex: 0 0 calc(25% - 10px); /* Establecer ancho fijo para cada columna */
+    flex: 0 0 calc(25% - 10px); 
     box-sizing: border-box; 
     justify-content: center;
     border: transparent;
 }
-
 .vinilos article div img {
     border: 3px solid #000000;
     border-radius: 5px;
-    max-width: 45%; 
-    max-height: 100%;
-    display: block; /* Eliminar espacio adicional debajo de la imagen */
     margin: 0 auto;
-  }
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+}
 
-  .vinilos article div h2,h3,p{
-    font-size: 2.75em;
-    text-align: center;
-    margin-top: auto;
-  }
-  .vinilos article div h3{
-    font-size: 200%;
-  }
-  .vinilos article div p{
-    font-size: 150%;
+.vinilos article div h2,h3,p{
+font-size: 2.75em;
+text-align: center;
+margin-top: auto;
+}
+
+.vinilos article div h3{
+    font-size: 1.5em;
+}
+  
+.vinilos article div p{
     text-align: right;
-  }
+}
 
-  .vinilos a{
-    margin-top:auto;
-    margin-left: 75%;
-    color: #007bff; 
+.vinilos a {
+    margin-top: auto;
+    margin-left: 48%;
+    color: #007bff;
     text-decoration: none;
     font-size: 1.3em;
-  }
+}
+ 
 
-  
-    .contactar article {
-            height: 100%;
-            width: 50%;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            margin-left: 20%;
-        }
+/* CSS expecificos para la pagina contactar */
+.contactar article {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+}
 
-    .contactar article form {
-        background-color: #cb98399b;
-        padding: 20px;
-        margin-top: auto;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 50%;
-    }
+.contactar article form {
+    background-color: #cb98399b;
+    padding: 20px;
+    margin-top: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
 
-    label {
-        display: block;
-        margin-bottom: 8px;
-    }
+label {
+    display: block;
+    margin-bottom: 8px;
+}
 
-    input, textarea {
-        width: 60%;
-        padding: 8px;
-        margin-bottom: 16px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+input, textarea {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    textarea {
-        /* Adjust the number of rows to increase the size */
-        height: 120px; /* You can adjust the height value as needed */
-    }
+textarea {
 
-    button {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .contactar p{
-        font-size: 2em;
-        color: green;
-    }
+    height: 120px;
+}
 
-  
-      .album article{
-        height: 100%;
-        padding-left: 35px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-      
-  
-      .album img {
-        max-width: 30%;
-        height: auto;
-        border-radius: 5px;
-      } 
-  
-      .album h3, .album p {
-        margin: 0;
-      }
-      .album p{
-        padding: 100px;
-        font-size: 1.5em;
-        text-align: justify;
-      }
-      .album ul{
-        text-align: left;
-    }
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contactar p{
+    font-size: 2em;
+    color: green;
+}
+
+
+
+/* CSS expecificos para la pagina de los albumes */
+.album article{
+    height: 100%;
+    padding-left: 35px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.album img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+} 
+
+.album h3, .album p {
+    margin: 0;
+}
+
+.album p{
+    padding: 100px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.album ul{
+    text-align: left;
+}

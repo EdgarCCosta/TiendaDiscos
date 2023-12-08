@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    
+</head>
+
+<body>
+    
+    <header>
+        <h1>Nuevas Adiciones</h1>
+    </header>
+
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            <div id="sub-menu">
+                <a href="../../nuevos/nuevos.html">Nuevos</a>
+                <a href="../../2ndmano/2ndmano.html">2ª mano</a>
+                <a href="../nuevasadiciones.html">Nuevas Adiciones</a>
+            </div>
+            <a href="../../../noticias/noticias.html">Noticias</a>
+            <a href="../../../contactar/contactar.html">Contactar</a>
+            <a href="../../../index.html">Volver</a>
+        </nav>
+
+        <main class="album">
+            <article class="album">
+                <img src="../img/PjHarvey.jpg" alt="Descripción de la imagen">
+                
+                <ul>
+                    <h3>Personal Best</h3>
+                    <li>A1 - To Bring You My Love</li>
+                    <li>A2 - Meet Ze Monsta</li>
+                    <li>A3 - Working for the Man</li>
+                    <li>A4 - C'Mon Billy</li>
+                    <li>A5 - Teclo</li>
+                    <li>B1 - Long Snake Moan</li>
+                    <li>B2 - Down by the Water</li>
+                    <li>B3 - I Think I'm a Mother</li>
+                    <li>B4 - Send His Love to Me</li>
+                    <li>B5 - The Dancer</li>
+                  </ul>
+
+                <p>
+                    "To Bring You My Love" de PJ Harvey es un viaje musical intenso y envolvente. Lanzado en 1995, el álbum presenta una paisaje sonoro oscuro y atmosférico, 
+                    con letras poéticas que exploran el amor, el deseo y el conflicto interno. La potente y vulnerable voz de PJ Harvey, junto con la producción bluesy y experimental,
+                    hacen de este álbum una obra única y cautivadora. "To Bring You My Love" destaca en la carrera de PJ Harvey como una expresión artística evocadora y conmovedora.
+                </p>
+                
+            </article>
+        </main>
+    </section>
+
+    <footer class="footer">
+        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

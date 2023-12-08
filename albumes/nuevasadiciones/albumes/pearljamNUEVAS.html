@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE DISCOS</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Nuevas Adiciones</h1>
+    </header>
+    
+    <section id="seccion">
+        <nav>
+            <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            <div id="sub-menu">
+                <a href="../../nuevos/nuevos.html">Nuevos</a>
+                <a href="../../2ndmano/2ndmano.html">2ª mano</a>
+                <a href="../nuevasadiciones.html">Nuevas Adiciones</a>
+            </div>
+            <a href="../../../noticias/noticias.html">Noticias</a>
+            <a href="../../../contactar/contactar.html">Contactar</a>
+            <a href="../../../index.html">Volver</a>
+        </nav>
+
+        <main class="album">
+            <article class="album">
+                <img src="../img/PearlJam.jpg" alt="Descripción de la imagen">
+                
+                <ul>
+                    <h3>Pearl Jam Unplugged</h3>
+                    <li>A1 - Oceans</li>
+                    <li>A2 - State Of Love And Trust</li>
+                    <li>A3 - Alive</li>
+                    <li>A4 - Black</li>
+                    <li>B1 - Jeremy</li>
+                    <li>B2 - Even Flow</li>
+                    <li>B3 - Porch</li>
+                  </ul>
+
+                <p>
+                    "MTV Unplugged" es un álbum en vivo de la banda de rock estadounidense Pearl Jam. Originalmente grabado el 16 de marzo de 1992 
+                    para la serie de televisión de MTV, MTV Unplugged, fue lanzado al público el 23 de octubre de 2020. Inicialmente, tuvo un lanzamiento limitado en noviembre de 2019 
+                    como parte del Record Store Day en vinilo de edición limitada, marcando la primera vez que la actuación de MTV Unplugged de la banda se ha lanzado tanto en vinilo como en CD.
+                </p>
+                
+            </article>
+        </main>
+    </section>
+
+    <footer class="footer">
+        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+    </footer>
+
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

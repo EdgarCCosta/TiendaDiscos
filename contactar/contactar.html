@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
         <h1>Contactar</h1>
     </header>
     
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
             <a href="#" onclick="toggleSubMenu()">Vinilos</a>
             <div id="sub-menu">
@@ -28,7 +37,9 @@
             <a href="../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="contactar">
+            <!-- Formulario de contacto -->
             <article>
                 <form action="#" method="post">
                     <label for="nombre">Nombre:</label>
@@ -55,18 +66,22 @@
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
                     <br>
+                    <!-- Modificado el botón de "submit" a "button" y añadida la función "enviarMensaje()" -->
                     <button type="button" onclick="enviarMensaje()">Enviar</button>
                 </form>
+                <!-- Mensaje de confirmación después de enviar el formulario -->
                 <p id="mensaje-enviado"></p>
             </article>
         </main>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+        <p>Tienda de discos, Oñati (20560) - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
     </footer>
 
+    <!-- Script para manejar el envío del formulario -->
     <script>
         function enviarMensaje() {
             var mensajeEnviadoDiv = document.getElementById('mensaje-enviado');
@@ -74,6 +89,7 @@
         }
     </script>
 
+    <!-- Script para manejar el submenú -->
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');

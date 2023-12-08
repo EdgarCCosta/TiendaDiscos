@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
         <h1>Nuevas Adiciones</h1>
     </header>
     
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
             <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
             <div id="sub-menu">
@@ -28,7 +37,9 @@
             <a href="../../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="vinilos">
+            <!-- Detalles del primer artículo -->
             <article>            
                 <div>
                     <img src="./img/TeamDresch.jpg" alt="Team Dresch Personal Best">
@@ -48,6 +59,7 @@
                 </div>
             </article>
 
+            <!-- Detalles del segundo artículo -->
             <article>            
                 <div><img src="./img/PjHarvey.jpg" alt="PJ Harvey To Bring You My Love"></div>
                 <div>
@@ -65,6 +77,7 @@
                 </div>
             </article>
 
+            <!-- Detalles del tercer artículo -->
             <article>            
                 <div><img src="./img/PearlJam.jpg" alt="Pearl Jam Unplugged"></div>
                 <div>
@@ -82,11 +95,12 @@
                 </div>
             </article>
 
+            <!-- Detalles del cuarto artículo -->
             <article>            
                 <div><img src="./img/ScreamingFemales.jpg" alt="Screaming Females Ugly"></div>
                 <div>
                     <h2>ALBUM</h2>
-                    <h3>UGLY</h3>
+                    <h3>SOMETHING UGLY</h3>
                     <a href="./albumes/screamingfemalesNUEVAS.html"> Saber más</a>
                 </div>
                 <div>
@@ -99,6 +113,7 @@
                 </div>
             </article>
 
+            <!-- Detalles del quinto artículo -->
             <article>            
                 <div><img src="./img/Sleaterkinney.jpg" alt="Sleater Kinney The Woods"></div>
                 <div>
@@ -118,11 +133,28 @@
         </main>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
         <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
     </footer>
 
+        <!-- Pie de página -->
+    <footer class="footer">
+        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
+    </footer>
+   
+    <!-- Script para manejar el submenú -->
+    <script>
+        function toggleSubMenu() {
+            var subMenu = document.getElementById('sub-menu');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');

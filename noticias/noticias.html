@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
         <h1>Noticias</h1>
     </header>
 
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
             <a href="#" onclick="toggleSubMenu()">Vinilos</a>
             <div id="sub-menu">
@@ -28,7 +37,9 @@
             <a href="../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="noticias">
+            <!-- Primer artículo -->
             <article>
                 <h3>Primer avance del Bilbao BBK Live 2024: Arcade Fire,  Massive Attack, The Prodigy...</h3>
                 <p>El renombrado festival Bilbao BBK Live, que se celebrará los días 11, 12 y 13 de julio de 2024 en el idílico entorno de Kobetamendi, 
@@ -38,16 +49,17 @@
                 <a href="https://fanmusicfest.com/content/primer-avance-del-bilbao-bbk-live-2024-arcade-fire-jungle-massive-attack-prodigy">Leer más</a></p>    
             </article>
 
+            <!-- Segundo artículo -->
             <article>
                 <h3>MGMT anuncia nuevo álbum «Loss of Life»</h3>
                 <p>MGMT ha anunciado su quinto álbum de estudio, Loss of Life, con un vídeo para la nueva canción “Mother Nature”. El álbum saldrá el 23 de febrero a través de Mom+Pop. 
-                    ndrew VanWyngarden y Ben Goldwasser crearon Loss of Life con el productor Patrick Wimberly y su colaborador Dave Fridmann, quien participó en todos los LP de estudio de la banda. 
+                    Andrew VanWyngarden y Ben Goldwasser crearon Loss of Life con el productor Patrick Wimberly y su colaborador Dave Fridmann, quien participó en todos los LP de estudio de la banda. 
                     El nuevo álbum abarca 10 pistas e incluye una colaboración con Christine and the Queens. 
                 </p>
                 <a href="https://fanmusicfest.com/content/primer-avance-del-bilbao-bbk-live-2024-arcade-fire-jungle-massive-attack-prodigy">Leer más</a></p>    
             </article>
-            </article>
 
+            <!-- Tercer artículo -->
             <article>
                 <h3>PJ Harvey repasa su nuevo disco en el concierto para Tiny Desk</h3>
                 <p>En el día de hoy se estrenó el concierto Tiny Desk que ofreció PJ Harvey. La compositora y cantante inglesa se sumó a esta serie de shows acústicos con una apuesta en la que prima 
@@ -56,8 +68,8 @@
                     La multiinstrumentista se despachó con un set de cinco canciones y un show de poco más de 15 minutos, como es el clásico formato de esta propuesta.</p>
                 <a href="https://fanmusicfest.com/content/primer-avance-del-bilbao-bbk-live-2024-arcade-fire-jungle-massive-attack-prodigy">Leer más</a></p>    
             </article>
-            </article>
-        
+
+            <!-- Cuarto artículo -->
             <article>
                 <h3>Azkena Rock Festival 2024 anuncia a Jane’s Addiction como nuevo cabeza de cartel</h3>
                 <p>El Azkena Rock Festival 2024, que se celebrará los días 20, 21 y 22 de junio en Mendizabala, Vitoria-Gasteiz, ha confirmado a Jane’s Addiction como su nuevo cabeza de cartel. 
@@ -68,11 +80,13 @@
         </main>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+        <p>Tienda de discos, Oñati (20560) - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
     </footer>
 
+    <!-- Script para manejar el submenú -->
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');

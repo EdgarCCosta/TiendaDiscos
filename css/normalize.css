@@ -192,13 +192,6 @@
    * Corrige la incapacidad para dar estilo a tipos clicables en iOS y Safari.
    */
   
-   button,
-  [type="button"],
-  [type="reset"],
-  [type="submit"] {
-    -webkit-appearance: button;
-  }
-  
   /**
    * Elimina el borde interior y el relleno en Firefox.
    */

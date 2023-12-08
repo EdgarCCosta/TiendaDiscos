@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../../../css/styles.css">
 </head>
 
 <body>
-
+    <!-- Encabezado de la página -->
     <header>
         <h1>Segunda Mano</h1>
     </header>
 
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
+            <!-- Enlace con función para mostrar/ocultar submenú -->
             <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            
+            <!-- Submenú desplegable -->
             <div id="sub-menu">
                 <a href="../../nuevos/nuevos.html">Nuevos</a>
                 <a href="../2ndmano.html">2ª mano</a>
                 <a href="../../nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
             </div>
+            
+            <!-- Otros enlaces de navegación -->
             <a href="../../../noticias/noticias.html">Noticias</a>
             <a href="../../../contactar/contactar.html">Contactar</a>
             <a href="../../../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="album">
+            <!-- Detalles del álbum -->
             <article class="album">
                 <img src="../img/Sleaterkinney.jpg" alt="Sleater Kinney The Woods">
                 
+                <!-- Lista de canciones -->
                 <ul>
                     <h3>The Woods</h3>
                     <li>A1 - The Fox</li>
@@ -44,8 +60,9 @@
                     <li>B3 - Steep Air</li>
                     <li>B4 - Let's Call It Love</li>
                     <li>B5 - Night Light</li>
-                  </ul>
+                </ul>
 
+                <!-- Descripción del álbum -->
                 <p>
                     Gran parte del material de The Woods invita a la inmolación al mismo tiempo que satisface completamente como música rock, <br>
                     siendo la turbulencia lírica parte de su atractivo como punk sostenido. No se debería recriminar a Sleater-Kinney por seguir existiendo, <br>
@@ -57,11 +74,13 @@
         </main>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
-    </footer>>
+        <p>Tienda de discos, Oñati (20560) - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
+    </footer>
 
+    <!-- Script para manejar el submenú -->
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');

@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../../../css/styles.css">
 </head>
 
 <body>
-
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Título principal -->
         <h1>Segunda Mano</h1>
     </header>
-    
+
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
+            <!-- Enlace con función para mostrar/ocultar submenú -->
             <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            
+            <!-- Submenú desplegable -->
             <div id="sub-menu">
                 <a href="../../nuevos/nuevos.html">Nuevos</a>
                 <a href="../2ndmano.html">2ª mano</a>
                 <a href="../../nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
             </div>
+            
+            <!-- Otros enlaces de navegación -->
             <a href="../../../noticias/noticias.html">Noticias</a>
             <a href="../../../contactar/contactar.html">Contactar</a>
             <a href="../../../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="album">
+            <!-- Detalles del álbum -->
             <article class="album">
+                <!-- Imagen del álbum -->
                 <img src="../img/ScreamingFemales.jpg" alt="Screaming Females Ugly">
                 
+                <!-- Lista de canciones -->
                 <ul>
-                    <h3>Ugly</h3>
+                    <h3>Something Ugly</h3>
                     <li>A1 - It All Means Nothing</li>
                     <li>A2 - Rotten Apple</li>
                     <li>A3 - Extinction</li>
@@ -48,23 +66,32 @@
                     <li>B5 - Something Ugly</li>
                     <li>B6 - Slow Birth</li>
                     <li>B7 - It's Nice</li>
-                  </ul>
+                </ul>
 
+                <!-- Descripción del álbum -->
                 <p>
-                    Las 14 pistas del álbum reafirman los puntos de referencia de la banda; todavía pueden destrozar y <br>la vocalista Marissa Paternoster aún puede soltar un poderoso alarido. 
-                    Pero no se queda ahí. <br>El álbum introduce nuevas exploraciones para la banda, un logro verdaderamente notable teniendo <br>en cuenta su ya prolífica producción. 
-                    "Ugly" tiene la combinación perfecta de energía cruda <br>y destreza musical pulida que produce el tipo de rock and roll que sigue siendo una fuerza a tener en cuenta.
+                    Las 14 pistas del álbum reafirman los puntos de referencia de la banda; todavía pueden destrozar y <br>
+                    la vocalista Marissa Paternoster aún puede soltar un poderoso alarido. 
+                    Pero no se queda ahí. <br>
+                    El álbum introduce nuevas exploraciones para la banda, un logro verdaderamente notable teniendo <br>
+                    en cuenta su ya prolífica producción. 
+                    "Ugly" tiene la combinación perfecta de energía cruda <br>
+                    y destreza musical pulida que produce el tipo de rock and roll que sigue siendo una fuerza a tener en cuenta.
                 </p>
                 
             </article>
         </main>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+        <!-- Información de contacto -->
+        <p>Tienda de discos, Oñati (20560) - Telf. 689 986 869</p>
+        <!-- Atribución de derechos -->
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
     </footer>
 
+    <!-- Script para manejar el submenú -->
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');

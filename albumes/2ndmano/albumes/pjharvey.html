@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../../../css/styles.css">
 </head>
 
 <body>
-
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Título principal -->
         <h1>Segunda Mano</h1>
     </header>
 
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
+            <!-- Enlace con función para mostrar/ocultar submenú -->
             <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            
+            <!-- Submenú desplegable -->
             <div id="sub-menu">
                 <a href="../../nuevos/nuevos.html">Nuevos</a>
                 <a href="../2ndmano.html">2ª mano</a>
                 <a href="../../nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
             </div>
+            
+            <!-- Otros enlaces de navegación -->
             <a href="../../../noticias/noticias.html">Noticias</a>
             <a href="../../../contactar/contactar.html">Contactar</a>
             <a href="../../../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="album">
+            <!-- Detalles del álbum -->
             <article class="album">
+                <!-- Imagen del álbum -->
                 <img src="../img/PjHarvey.jpg" alt="PJ Harvey To Bring You My Love">
                 
+                <!-- Lista de canciones -->
                 <ul>
                     <h3>To Bring You My Love</h3>
                     <li>A1 - To Bring You My Love</li>
@@ -44,8 +62,9 @@
                     <li>B3 - I Think I'm a Mother</li>
                     <li>B4 - Send His Love to Me</li>
                     <li>B5 - The Dancer</li>
-                  </ul>
+                </ul>
 
+                <!-- Descripción del álbum -->
                 <p>
                     "To Bring You My Love" de PJ Harvey es un viaje musical intenso y envolvente. Lanzado en 1995, el álbum presenta una paisaje sonoro oscuro y atmosférico, 
                     con letras poéticas que exploran el amor, el deseo y el conflicto interno. La potente y vulnerable voz de PJ Harvey, junto con la producción bluesy y experimental,
@@ -56,11 +75,15 @@
         </main>
     </section>
 
-<footer class="footer">
-        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <!-- Información de contacto -->
+        <p>Tienda de discos, Oñati (20560) - Telf. 689 986 869</p>
+        <!-- Atribución de derechos -->
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
     </footer>
 
+    <!-- Script para manejar el submenú -->
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');

@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../../../css/styles.css">
 </head>
 
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
         <h1>Nuevos</h1>
     </header>
 
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
             <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
             <div id="sub-menu">
@@ -28,10 +37,13 @@
             <a href="../../../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="album">
+            <!-- Detalles del álbum -->
             <article class="album">
                 <img src="../img/Bikini kill.jpg" alt="Bikini Kill Reject All American">
                 
+                <!-- Lista de canciones -->
                 <ul>
                     <h3>Reject All American</h3>
                     <li>A1 - Statement of Vindication</li>
@@ -46,10 +58,11 @@
                     <li>B4 - Tony Randall</li>
                     <li>B5 - Reject All American</li>
                     <li>B6 - Finale</li>
-                  </ul>
+                </ul>
 
+                <!-- Descripción del álbum -->
                 <p>
-                    Reject All American" de Bikini Kill es un álbum audaz que desafía las normas y expectativas<br>
+                    "Reject All American" de Bikini Kill es un álbum audaz que desafía las normas y expectativas<br>
                     sociales. Lanzado en 1996, conserva el distintivo sonido punk de Bikini Kill mientras explora<br>
                     temas más oscuros y complejos. La energía cruda y sin disculpas, junto con la potente voz<br>
                     de Kathleen Hanna, crea una experiencia auditiva visceral. Las letras desafían la conformidad, 
@@ -57,16 +70,17 @@
                     Aunque puede no ser tan accesible como algunas de sus primeras producciones, "Reject All 
                     American" sigue siendo una obra provocadora e influyente dentro del movimiento riot grrrl.
                 </p>
-
             </article>
         </main>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+        <p>Tienda de discos, Oñati (20560) - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
     </footer>
 
+    <!-- Script para manejar el submenú -->
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');

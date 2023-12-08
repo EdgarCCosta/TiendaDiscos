@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../../../css/styles.css">
 </head>
 
 <body>
-
+    <!-- Encabezado de la página -->
     <header>
+        <!-- Título principal -->
         <h1>Segunda Mano</h1>
     </header>
 
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
+            <!-- Enlace con función para mostrar/ocultar submenú -->
             <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
+            
+            <!-- Submenú desplegable -->
             <div id="sub-menu">
                 <a href="../../nuevos/nuevos.html">Nuevos</a>
                 <a href="../2ndmano.html">2ª mano</a>
                 <a href="../../nuevasadiciones/nuevasadiciones.html">Nuevas Adiciones</a>
             </div>
+            
+            <!-- Otros enlaces de navegación -->
             <a href="../../../noticias/noticias.html">Noticias</a>
             <a href="../../../contactar/contactar.html">Contactar</a>
             <a href="../../../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="album">
+            <!-- Detalles del álbum -->
             <article class="album">
+                <!-- Imagen del álbum -->
                 <img src="../img/bully.jpg" alt="Bully Suggaregg">
                 
+                <!-- Lista de canciones -->
                 <ul>
                     <h3>SUGGAR EGG</h3>
                     <li>A1 - Add It On</li>
@@ -46,28 +64,29 @@
                     <li>B4 - Not Ashamed</li>
                     <li>B5 - Hours And Hours</li>
                     <li>B6 - What I Wanted</li>
-                  </ul>
+                </ul>
 
+                <!-- Descripción del álbum -->
                 <p>
-                    Fuerte y tranquilo, armonía y disonancia, suave y pesado: la música rock ha extraído  <br>
-                    emociones contrastantes durante mucho tiempo mediante la yuxtaposición binaria, <br>
-                    pero fue el grunge el que agudizó un contraste sonoro convirtiéndolo en una tarjeta de  <br>
-                    presentación genérica. Treinta años después, Alicia Bognanno de Minnesota sigue  <br>
-                    experimentando con la dinámica de esa época: su trabajo se construye a partir de la  <br>
-                    interacción entre líneas melódicas de guitarra y rugidos de dolor primal, entre un canto <br>
-                    melódico y un triturado brutal. Nunca desagradablemente estridente, nunca<br> 
-                    empalagosamente dulce, es una fórmula hermética y, al mismo tiempo, extremadamente gastada.     
+                    Fuerte y tranquilo, armonía y disonancia, suave y pesado: la música rock ha extraído emociones contrastantes durante mucho tiempo mediante la yuxtaposición binaria,
+                    pero fue el grunge el que agudizó un contraste sonoro convirtiéndolo en una tarjeta de presentación genérica. Treinta años después, Alicia Bognanno de Minnesota sigue
+                    experimentando con la dinámica de esa época: su trabajo se construye a partir de la interacción entre líneas melódicas de guitarra y rugidos de dolor primal, entre un canto
+                    melódico y un triturado brutal. Nunca desagradablemente estridente, nunca empalagosamente dulce, es una fórmula hermética y, al mismo tiempo, extremadamente gastada.
                 </p>
 
             </article>
         </main>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+        <!-- Información de contacto -->
+        <p>Tienda de discos, Oñati (20560) - Telf. 689 986 869</p>
+        <!-- Atribución de derechos -->
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
     </footer>
 
+    <!-- Script para manejar el submenú -->
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');

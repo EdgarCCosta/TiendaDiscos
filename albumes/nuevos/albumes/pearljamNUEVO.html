@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/normalize.css">
-    <title>TIENDA DE DISCOS</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
     
+    <!-- Enlace a la hoja de estilos normalize.css -->
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    
+    <!-- Título de la página -->
+    <title>TIENDA DE DISCOS</title>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../../../css/styles.css">
 </head>
 
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
         <h1>Nuevos</h1>
     </header>
 
+    <!-- Sección principal -->
     <section id="seccion">
+        <!-- Navegación -->
         <nav>
             <a href="#" onclick="toggleSubMenu()"><u>Vinilos</u></a>
             <div id="sub-menu">
@@ -28,10 +37,13 @@
             <a href="../../../index.html">Volver</a>
         </nav>
 
+        <!-- Contenido principal -->
         <main class="album">
+            <!-- Detalles del álbum -->
             <article class="album">
                 <img src="../img/PearlJam.jpg" alt="Pearl Jam Unplugged">
                 
+                <!-- Lista de canciones -->
                 <ul>
                     <h3>Pearl Jam Unplugged</h3>
                     <li>A1 - Oceans</li>
@@ -41,8 +53,9 @@
                     <li>B1 - Jeremy</li>
                     <li>B2 - Even Flow</li>
                     <li>B3 - Porch</li>
-                  </ul>
+                </ul>
 
+                <!-- Descripción del álbum -->
                 <p>
                     "MTV Unplugged" es un álbum en vivo de la banda de rock estadounidense Pearl Jam. Originalmente grabado el 16 de marzo de 1992 
                     para la serie de televisión de MTV, MTV Unplugged, fue lanzado al público el 23 de octubre de 2020. Inicialmente, tuvo un lanzamiento limitado en noviembre de 2019 
@@ -53,11 +66,13 @@
         </main>
     </section>
 
+    <!-- Pie de página -->
     <footer class="footer">
-        <p>Tienda de discos, Oñati  (20560)  - Telf. 689 986 869</p>
-        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internaional(CC BY 4.0)</p>
+        <p>Tienda de discos, Oñati (20560) - Telf. 689 986 869</p>
+        <p>Edgar Santiago Rodrigues | Creative Commons Attribution 4.0 Internacional (CC BY 4.0)</p>
     </footer>
 
+    <!-- Script para manejar el submenú -->
     <script>
         function toggleSubMenu() {
             var subMenu = document.getElementById('sub-menu');
